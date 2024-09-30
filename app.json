@@ -1,9 +1,9 @@
 {
   "expo": {
-    "name": "RatingCustomer",
-    "slug": "RatingCustomer",
+    "name": "CustomerSurvay",
+    "slug": "CustomerSurvay",
     "version": "1.0.0",
-    "scheme": "RatingCustomer",
+    "scheme": "CustomerSurvay",
     "web": {
       "bundler": "metro",
       "output": "static",
@@ -27,16 +27,25 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.abdullahdsouky3.RatingCustomer"
+      "bundleIdentifier": "com.abdullahdsouky3.CustomerSurvay"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.abdullahdsouky3.Glowing"
+      "package": "com.abdullahdsouky3.CustomerSurvay"
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "5bf03c83-f548-4e5e-9364-2b2b1251f35c"
+      }
     }
-    
-  
+  },
+  "runtimeVersion": {
+    "policy": "appVersion"
   }
 }

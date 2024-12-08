@@ -1,5 +1,5 @@
 import React, { createContext, useState, useContext, ReactNode } from 'react';
-import CustomLoading from '~/components/Custom/CustomLoading';
+import CustomLoading from '~/components/loading/CustomLoading';
 
 interface LoadingContextType {
   isLoading: boolean;
@@ -13,10 +13,10 @@ export const LoadingProvider: React.FC<{ children: ReactNode }> = ({ children })
 
   return (
     <LoadingContext.Provider value={{ isLoading, setIsLoading }}>
-        <>
-              <CustomLoading isLoading={isLoading} />
-      {children}
-        </>
+      <>
+        <CustomLoading isLoading={isLoading} />
+        {children}
+      </>
     </LoadingContext.Provider>
   );
 };
